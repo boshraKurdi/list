@@ -54,7 +54,7 @@ function App() {
   }
   return (
     <div className="App container">
-      <h1 className="text">TodoList</h1>
+      <h1 className="text">TodoList Table</h1>
       <ShowItem item={todoList} delete={DeleteItem} edit={EditItem}/>
       <InputItem item={todoList} add={Add} name={Name} age={Age} getN={InputI.name} getG={InputI.age}/>
     </div>
