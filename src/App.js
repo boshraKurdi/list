@@ -1,6 +1,7 @@
 import ShowItem from "./components/ShowList/ShowItem";
 import InputItem from "./components/InputList/InputItem";
 import { useState } from "react";
+import { Banner } from "./components/Banner";
 let index = 3;
 function App() {
   const [InputI , setInputI] = useState({name: "" , age: ""}) 
@@ -55,8 +56,7 @@ function App() {
   return (
     <div className="App container">
       <h1 className="text">TodoList Table</h1>
-      <ShowItem item={todoList} delete={DeleteItem} edit={EditItem}/>
-      <InputItem item={todoList} add={Add} name={Name} age={Age} getN={InputI.name} getG={InputI.age}/>
+      <Banner />
     </div>
   );
 }
